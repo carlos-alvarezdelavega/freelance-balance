@@ -1,4 +1,4 @@
-<!DOCTYPE html lang="en">
+<!DOCTYPE html>
 
 <head>
     <meta charset="UTF-8">
@@ -8,35 +8,64 @@
 </head>
 
 <body>
-    <h1 class="title is-1">
-        Bulma
-    </h1>
-
-    <p class="subtitle">
-        Modern CSS framework based on <a
-            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
-    </p>
-
-    <div class="field">
-        <div class="control">
-            <input class="input" type="text" placeholder="Input">
+    <nav class="navbar is-white has-shadow">
+        <!--Logo / brand -->
+        <div class="navbar brand">
+            <a class="navbar-item">
+                <img src="assets/forestry-full.svg" alt="forestry logo">
+            </a>
+            <a class="navbar-burger is-white" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
         </div>
-    </div>
+        <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+                <a class="navbar-item">About the study</a>
+                <a class="navbar-item">What is needed</a>
+                <a class="navbar-item">Benefits</a>
+                <a class="navbar-item">How to participate</a>
+            </div>
+        </div>
+    </nav>
 
-    <div class="field">
-        <p class="control">
-            <span class="select">
-                <select>
-                    <option>Select dropdown</option>
-                </select>
-            </span>
-        </p>
-    </div>
+    <!--Section 1 -->
+    <section class="hero is-dark is-medium">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+              About the study
+            </h1>
+            <h2 class="subtitle">
+              Does work interfere with your life?
+            </h2>
+          </div>
+        </div>
+      </section>
 
-    <div class="buttons">
-        <a class="button is-primary">Primary</a>
-        <a class="button is-link">Link</a>
+      <!-- Product info -->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-vcentered">
+        <div class="column is-3">
+          <h1 class="is-size-1 title">Docker</h1>
+          <h2 class="is-size-2 subtitle">Dark Roast</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos dolores nam accusamus nulla dignissimos veniam vitae sunt minus natus illum?</p>
+        </div>
+        <div class="column is-5 has-text-centered">
+          <img src="assets/product.png" alt="docker coffee image" class="px-6">
+        </div>
+        <div class="column is-4">
+          <div class="is-size-4 mb-4">£10.95</div>
+          <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis perferendis ipsa totam.</p>
+        </div>
+      </div>
     </div>
+  </section>
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>
