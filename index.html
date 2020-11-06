@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,55 +9,61 @@
 </head>
 
 <body>
-  <nav class="navbar is-white has-shadow is-fixed-top" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-light has-shadow is-fixed-top" role="navigation" aria-label="navigation">
     <!--Logo / brand -->
-    <div class="navbar brand">
-      <a class="navbar-item">
-        <img src="assets/Freelance-balance-02.svg" alt="freelance balance logo">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#home">
+        <img src="assets/Freelance-balance-02.svg" alt="freelance balance logo" href="#home" data-target="home">
       </a>
-      <a class="navbar-burger is-primary" id="burger">
-        <span></span>
-        <span></span>
-        <span></span>
+      <a class="navbar-burger" role="bottom" data-target="menubar" id="navbar-burger" aria-label="menu"
+        aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
     </div>
-    <div class="navbar-menu" id="nav-links">
+    <div class="navbar-menu" id="menubar">
       <div class="navbar-end">
-        <a class="navbar-item">Who can take part?</a>
-        <a class="navbar-item">About the study</a>
-        <a class="navbar-item">FAQs</a>
-        <a class="navbar-item">Participant information PDF</a>
+        <a href="#who" class="navbar-item" data-target="who">Who can take part?</a>
+        <a href="#about" class="navbar-item" data-target="about">About the study</a>
+        <a href="" class="navbar-item" data-target="">FAQs</a>
+        <a href="" class="navbar-item" data-target="">Participant information PDF</a>
       </div>
     </div>
   </nav>
 
-  <!--Section 1 -->
-  <section class="section is-medium">
-    <div class="container is-max-desktop has-text-light">
-      <div class="notification is-primary">
-        <div class="columns is-vcentered">
-          <div class="column">
-            <h1 class="is-size-1 title mb-4">Freelance Balance</h1>
-            <p>This is a study aimed at understanding work-life balance of freelancers who use the platform Upwork. In
-              this website, you will find all the necessary information about the study and how to participate. </p>
-          </div>
-          <div class="column is-7">
-            <img src="assets/section-1.png" alt="Freelancer artwork" class="px-6">
+  <!--Section Landing -->
+  <section class="section" id="home">
+    <div class="hero is-primary">
+      <div class="hero-body mt-4">
+        <div class="container has-text-light">
+          <div class="notification is-primary">
+            <div class="columns is-vcentered">
+              <div class="column is-5-desktop is-4-tablet is-size-4-mobile">
+                <h1 class="is-size-1 title mb-4">Freelance Balance</h1>
+                <p>This is a study aimed at understanding work-life balance of freelancers who use the platform Upwork.
+                  In
+                  this website, you will find all the necessary information about the study and how to participate. </p>
+              </div>
+              <div class="column is-7-desktop is-6-tablet is-9-mobile">
+                <img src="assets/section-1.png" alt="Freelancer artwork" class="px-6">
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Participant info -->
-  <section class="section is-medium">
+  <!-- Who can take part? -->
+  <section class="section is-medium" id="who">
     <div class="container is-max-desktop has-text-light">
-      <div class="columns is-vcentered">
-        <div class="column is-7">
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-7-desktop is-6-tablet is-9-mobile">
           <img src="assets/section-2.png" alt="participant artwork" class="px-6">
         </div>
         <div class="column">
-          <h1 class="is-size-1 title mb-4">Who can take part?</h1>
+          <h1 class="is-size-1-desktop is-size-3-mobile title mb-4">Who can take part?</h1>
           <p>We are recruiting professionals that use the Upwork platform regularly. To take part you must fulfill the
             following requirements:</p>
           <br></br>
@@ -84,8 +91,8 @@
 
   <div class="is-divider"></div>
 
-  <!-- Study info -->
-  <section class="hero is-info is-medium">
+  <!-- About the study -->
+  <section class="hero is-info is-medium" id="about">
     <div class="hero-body">
       <div class="container">
         <div class="columns columns is-vcentered">
@@ -95,19 +102,19 @@
               will complete three short daily activities that involve:</p>
             <br></br>
             <div class="list-item">
-             <li>Reflecting on your workday.</li>
+              <li>Reflecting on your workday.</li>
             </div>
             <div class="list-item">
               <li>Sharing if you feel Upwork disrupts aspects of your day.</li>
-             </div>
-             <div class="list-item">
+            </div>
+            <div class="list-item">
               <li>Express how in control of your felt of your work-life balance each day.</li>
-             </div>
-             <br></br>
+            </div>
+            <br></br>
             <p>You will use your smartphone to complete these activities through WhatsAppIn detail, the study will
               consist of the four stages below.</p>
           </div>
-          <div class="column is-6">
+          <div class="column is-7-desktop is-6-tablet is-9-mobile">
             <img src="assets/section-3.png" alt="Freelancer artwork" class="px-6">
           </div>
         </div>
@@ -115,12 +122,12 @@
       <!-- Study steps-->
       <br></br>
       <div class="container">
-        <div class="columns">
+        <div class="columns is-multiline">
           <div class="column">
-            <h2 class="subtitle is-size-4"> 1. Registration Survey</h2>
+            <h2 class="subtitle is-size-4 has-text-weight-semibold"> 1. Registration Survey</h2>
           </div>
           <div class="column">
-            <h2 class="subtitle is-size-4"> 2. On-Boarding Interview</h2>
+            <h2 class="subtitle is-size-4 has-text-weight-semibold"> 2. On-Boarding Interview</h2>
           </div>
         </div>
       </div>
