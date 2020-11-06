@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import "../node_modules/bulma/bulma.sass";
 
 // Import a Google Font
 @import url('href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"');
@@ -8,22 +7,29 @@
 $purple: #8A4D76;
 $pink: #FA7C91;
 $brown: #757763;
-$beige-light: #D0D1CD;
-$beige-lighter: #EFF0EB;
-$grey-dark: #00103D;
+$blue: #00103D;
+$cyan: #C4DDF2;
+$beige-light: #F2F2F2;
+$beige-lighter: #C4DDF2;
 
 // Update Bulma's global variables
 $title-family: "Merriweather", serif;
 $family-sans-serif: "Roboto", sans-serif;
-$grey-dark: $brown;
+$grey-dark: $blue;
 $grey-light: $beige-light;
-$primary: $purple;
+$primary: $blue;
+$light: $cyan;
+$info: $beige-light;
 $link: $pink;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
+$text: $beige-light;
+$title-color: $beige-light;
+$background: $blue;
+
 
 // Update some of Bulma's component variables
-$body-background-color: $beige-lighter;
+$body-background-color: $blue;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
@@ -38,3 +44,5 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/layout/footer.sass";
+@import "../node_modules/bulma/sass/grid/columns.sass";
