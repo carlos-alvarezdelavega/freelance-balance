@@ -53,3 +53,34 @@ for (item of navItems) {
         });
     });
 }
+
+/* code in progress
+function smoothScroll(target, duration){
+    const target = document.querySelector(target);
+    const targetPosition = target.getBoundingClientRect().top;
+    const startPosition = window.pageXOffset;
+    const distance = targetPosition - startPosition;
+    const startTime = null;
+    
+    function animation(currentTime){
+        if(startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if(timeElapsed < duration) requestAnimationFrame(animation);
+    };
+
+    function ease(t, b, c, d) {
+        t /= d/2;
+        if (t < 1) return c/2*t*t + b;
+        t--;
+        return -c/2 * (t*(t-2) - 1) + b;
+    };
+    
+    requestAnimationFrame(animation);
+};
+
+const link1 = document.querySelector('.link1');
+link1.addEventListener('click', function(){
+    smoothScroll('.link1', 1000);
+}); */
