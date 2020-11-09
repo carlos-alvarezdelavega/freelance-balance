@@ -222,7 +222,7 @@ a {
   a strong {
     color: currentColor; }
   a:hover {
-    color: #C4DDF2; }
+    color: #A4A3D9; }
 
 code {
   background-color: #00103D;
@@ -314,7 +314,7 @@ table th {
     margin-right: calc(-0.5em - 2px); }
   .button:hover, .button.is-hovered {
     border-color: #F2F2F2;
-    color: #C4DDF2; }
+    color: #A4A3D9; }
   .button:focus, .button.is-focused {
     border-color: #00103D;
     color: #363636; }
@@ -322,7 +322,7 @@ table th {
       box-shadow: 0 0 0 0.125em rgba(242, 153, 177, 0.25); }
   .button:active, .button.is-active {
     border-color: #00103D;
-    color: #C4DDF2; }
+    color: #A4A3D9; }
   .button.is-text {
     background-color: transparent;
     border-color: transparent;
@@ -3367,7 +3367,7 @@ a.navbar-item,
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #fafafa;
+  background-color: #C4DDF2;
   padding: 3rem 1.5rem 6rem; }
 
 .column {
