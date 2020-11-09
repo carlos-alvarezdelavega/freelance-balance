@@ -20,13 +20,14 @@ $grey-light: $beige-light;
 $primary: $blue;
 $light: $cyan;
 $info: $beige-light;
-$link: $pink;
+$link: $cyan;
+$link-active: $cyan;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 $text: $beige-light;
 $title-color: $beige-light;
 $background: $blue;
-
+$link-hover: $cyan;
 
 // Update some of Bulma's component variables
 $body-background-color: $blue;
@@ -46,3 +47,6 @@ $input-shadow: none;
 @import "../node_modules/bulma/sass/layout/section.sass";
 @import "../node_modules/bulma/sass/layout/footer.sass";
 @import "../node_modules/bulma/sass/grid/columns.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
