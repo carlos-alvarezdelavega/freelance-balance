@@ -5,27 +5,29 @@
 
 // Set your brand colors
 $purple: #8A4D76;
-$pink: #FA7C91;
+$pink: #F299B1;
 $brown: #757763;
 $blue: #00103D;
 $cyan: #C4DDF2;
 $beige-light: #F2F2F2;
-$beige-lighter: #C4DDF2;
+$beige-lighter: #F2F2F2;
 
 // Update Bulma's global variables
 $title-family: "Merriweather", serif;
+$text-strong: $cyan;
 $family-sans-serif: "Roboto", sans-serif;
 $grey-dark: $blue;
 $grey-light: $beige-light;
 $primary: $blue;
 $light: $cyan;
 $info: $beige-light;
-$link: $cyan;
+$link: $pink;
 $link-active: $cyan;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 $text: $beige-light;
-$title-color: $beige-light;
+$text-light: $beige-lighter;
+$title-color: $beige-lighter;
 $background: $blue;
 $link-hover: $cyan;
 
