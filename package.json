@@ -13,5 +13,8 @@
   "devDependencies": {
     "bulma": "^0.9.1",
     "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "zenscroll": "^4.0.2"
   }
 }
