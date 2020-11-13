@@ -4,9 +4,10 @@
 @import url('href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"');
 
 // Set your brand colors
-$purple: #A4A3D9;
+$purple: #7552F2;
 $pink: #F299B1;
 $brown: #757763;
+$green: #044D8C;
 $blue: #00103D;
 $cyan: #C4DDF2;
 $beige-light: #F2F2F2;
@@ -21,7 +22,7 @@ $grey-light: $beige-light;
 $primary: $blue;
 $light: $cyan;
 $info: $beige-light;
-$link: $pink;
+$link: $blue;
 $link-active: $purple;
 $link-hover: $purple;
 $widescreen-enabled: false;
@@ -37,6 +38,7 @@ $body-background-color: $blue;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
+$navbar-item-color: $green;
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/sass/utilities/_all.sass";
