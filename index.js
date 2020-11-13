@@ -41,7 +41,7 @@ window.addEventListener('scroll', () => {
     }
 }, false);
 
-// smooth scrolling
+/* smooth scrolling
 for (item of navItems) {
     item.addEventListener('click', e => {
         e.preventDefault();
@@ -66,4 +66,5 @@ for (item of linkItem) {
         });
     });
 }
+*/
 
