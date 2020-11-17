@@ -7,7 +7,7 @@ burger.addEventListener('click', () => {
 
 // shadow scroll
 const navItems = document.getElementById('menubar').firstElementChild.children;
-    navSections = new Array(navItems.length);
+navSections = new Array(navItems.length);
 for (i = 0; i < navItems.length; i++)
     navSections[i] = document.getElementById(navItems[i].dataset.target);
 
@@ -16,9 +16,9 @@ function isVisible(ele) {
     const r = ele.getBoundingClientRect();
     const h = (window.innerHeight || document.documentElement.clientHeight);
     const w = (window.innerWidth || document.documentElement.clientWidth);
-    return (r.top <= h) && 
-        (r.top + r.height - menuBarHeight >= 0) && 
-        (r.left <= h) && 
+    return (r.top <= h) &&
+        (r.top + r.height - menuBarHeight >= 0) &&
+        (r.left <= h) &&
         (r.left + r.width >= 0);
 }
 function activateIfVisible() {
@@ -26,7 +26,7 @@ function activateIfVisible() {
         if (b && isVisible(navSections[i])) {
             navItems[i].classList.add('is-active');
             b = false;
-        } else 
+        } else
             navItems[i].classList.remove('is-active');
     }
 }
@@ -41,30 +41,34 @@ window.addEventListener('scroll', () => {
     }
 }, false);
 
-/* smooth scrolling
-for (item of navItems) {
-    item.addEventListener('click', e => {
-        e.preventDefault();
-        window.scroll({ 
-            behavior: 'smooth', 
-            left: 0, 
-            top: document.getElementById(e.target.dataset.target).getBoundingClientRect().top + 
-                window.scrollY 
-        });
-    });
-}
-
-const linkItem = document.getElementById('home').firstElementChild.children;
-for (item of linkItem) {
-    item.addEventListener('click', e => {
-        e.preventDefault();
-        window.scroll({ 
-            behavior: 'smooth', 
-            left: 0, 
-            top: document.getElementById(e.target.dataset.target).getBoundingClientRect().top + 
-                window.scrollY 
-        });
-    });
-}
-*/
+//Cookie consent
+onInitialise: function (status) {
+    var type = this.options.type;
+    var didConsent = this.hasConsented();
+    if (type == 'opt-in' && didConsent) {
+        // enable cookies
+    }
+    if (type == 'opt-out' && !didConsent) {
+        // disable cookies
+    };
+},
+onStatusChange: function(status, chosenBefore) {
+    var type = this.options.type;
+    var didConsent = this.hasConsented();
+    if (type == 'opt-in' && didConsent) {
+        // enable cookies
+    }
+    if (type == 'opt-out' && !didConsent) {
+        // disable cookies
+    };
+},
+onRevokeChoice: function() {
+    var type = this.options.type;
+    if (type == 'opt-in') {
+        // disable cookies
+    }
+    if (type == 'opt-out') {
+        // enable cookies
+    };
+};
 
