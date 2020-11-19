@@ -41,5 +41,4 @@ window.addEventListener('scroll', () => {
     }
 }, false);
 
-
-
+// Cookie policy
